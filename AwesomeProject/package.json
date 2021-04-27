@@ -6,8 +6,9 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "lint": "tsc && tslint --project tsconfig.json",
     "test": "jest",
-    "lint": "eslint ."
+    "build:android": "cd android && ./gradlew clean assembleRelease"
   },
   "dependencies": {
     "react": "17.0.1",
